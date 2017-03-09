@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>array</title>
+
+    </head>
+    <body>
+    <script>
+          function funksiya(arr1) {
+
+                    var a = 1;  
+                    var b = 0;  
+                    var c;  
+                        
+                        for (var i=0; i<arr1.length; i++) { 
+                            for (var j=i; j<arr1.length; j++) {
+                                    if (arr1[i] == arr1[j])  
+                                    b++;  
+                                    if (a<b) {  
+                                    a=b;   
+                                    c = arr1[i];  
+                                    }  
+                            }  
+                            b=0;  
+                        }
+                        return ('Cavab: ' + c + ' ' + a + ' defe tekrarlanib.') ; 
+                }
+                        
+                var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];  
+                var cavab = funksiya(arr1);
+                document.write(cavab);
+    </script>
+    </body>
+</html>
